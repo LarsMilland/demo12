@@ -58,6 +58,7 @@ public class FruitController {
         return repository.findOne(id);
     }
 
+    // List of all fruits
     @ResponseBody
     @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
     public List<Fruit> getAll() {
